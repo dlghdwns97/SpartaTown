@@ -16,17 +16,4 @@ public class TopDownCharacterController : MonoBehaviour
     {
         OnLookEvent?.Invoke(direction);
     }
-    //[SerializeField] private float speed = 5f;
-    //void Start()
-    //{
-        
-    //}
-
-    //void Update()
-    //{
-        //float x = Input.GetAxisRaw("Horizontal");
-        //float y = Input.GetAxisRaw("Vertical");
-
-        //transform.position += new Vector3(x, y) * speed * Time.deltaTime;
-    //}
 }
