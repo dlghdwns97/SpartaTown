@@ -16,28 +16,23 @@ public class CharacterBtn : MonoBehaviour
     {
         CharSelect.gameObject.SetActive(true);
     }
-    public void Selectdoc()
-    {
-        RectTransform CharBtnrect = CharBtn.GetComponent<RectTransform>();
-        RectTransform docrect = doc.GetComponent<RectTransform>();
-        CharBtnrect.sizeDelta = docrect.sizeDelta;
-        CharBtn.sprite = doc.sprite;
-        characterRenderer.sprite = doc.sprite;
-        animator.SetInteger("CharacterIndex", 2);
-        CharSelect.gameObject.SetActive(false);
-    }
-    public void Selectpeng()
-    {
-        RectTransform CharBtnrect = CharBtn.GetComponent<RectTransform>();
-        RectTransform pengrect = peng.GetComponent<RectTransform>();
-        CharBtnrect.sizeDelta = pengrect.sizeDelta;
-        CharBtn.sprite = peng.sprite;
-        characterRenderer.sprite = peng.sprite;
-        animator.SetInteger("CharacterIndex", 1);
-        CharSelect.gameObject.SetActive(false);
-    }
-    public void SelectCharacter()
-    {
 
+    public void SelectCharacter(Image i)
+    {
+        RectTransform CharBtnrect = CharBtn.GetComponent<RectTransform>();
+        RectTransform rect = i.GetComponent<RectTransform>();
+        CharBtnrect.sizeDelta = rect.sizeDelta;
+        CharBtn.sprite = i.sprite;
+        characterRenderer.sprite = i.sprite;
+        switch (i.name.ToString())
+        {
+            case "Peng":
+                animator.SetInteger("CharacterIndex", 1);
+                break;
+            case "Doc":
+                animator.SetInteger("CharacterIndex", 2);
+                break;
+        }
+        CharSelect.gameObject.SetActive(false);
     }
 }

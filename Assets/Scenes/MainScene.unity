@@ -19965,11 +19965,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 184980872}
         m_TargetAssemblyTypeName: CharacterBtn, Assembly-CSharp
-        m_MethodName: Selectdoc
-        m_Mode: 1
+        m_MethodName: SelectCharacter
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1137011721}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -20771,11 +20771,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 184980872}
         m_TargetAssemblyTypeName: CharacterBtn, Assembly-CSharp
-        m_MethodName: Selectpeng
-        m_Mode: 1
+        m_MethodName: SelectCharacter
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1513821985}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
